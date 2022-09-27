@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"></script>
+    <script>
+        $(document).ready(() => {
+            const input = $('.isi-form').children().find(':input')
+            $('#post-form').submit((e) => {
+                for (let i = 0; i < input.length; i++) {
+                    if (!input[i] || !input[i].value || (input[i].className == 'radio-input' && !input[3].checked)) {
+                        alert(`${input[i].id} harus diisi!`)
+                        e.preventDefault()
+                        return
+                    }
+                }
+            })
+        })
+
+    </script>
+</head>
+<body>
+<form action="index.html" id="post-form" method="post">
+    <h4> FORMULIR REGISTRASI</h4>
+    <div class="page">
+        <div class="section">
+            <div class="item identitas">
+                <b>PESERTA</b>
+            </div>
+            <div class="data">
+                <div class="col">
+                    <div class="row">Nama Lengkap & Gelar</div>
+                    <div class="row">Asal Instansi / Kota</div>
+                    <div class="row">Alamat</div>
+                    <div class="row">Kode Pos</div>
+                    <div class="row">Provinsi</div>
+                    <div class="row">Telepon / Handphone</div>
+                    <div class="row">Email</div>
+                    <div class="row">Sponsor</div>
+                    <div class="row">Nama Perusahaan</div>
+                    <div class="row">Alamat Perusahaan</div>
+                    <div class="row">Nama Kontak Personal</div>
+                    <div class="row">Telp. Personal</div>
+                    <div class="row">Email Perusahaan</div>
+                </div>
+                <div class="col isi-form">
+                    <div class="row"><input id="Nama" class="dottedLines" type="text"></div>
+                    <div class="row"><input id="Instansi" class="dottedLines" type="text"></div>
+                    <div class="row"><input id="Alamat" class="dottedLines" type="text"></div>
+                    <div class="row"><input id="Kode Pos" class="dottedLines" type="number"></div>
+                    <div class="row"><input id="Provinsi" class="dottedLines" type="text"></div>                   
+                    <div class="row"><input id="Telepon" class="dottedLines" type="number"></div>
+                    <div class="row"><input id="Email" class="dottedLines" type="text"></div>
+                    <div class="row"><input id="Sponsor" class="dottedLines" type="text"></div>
+                    <div class="row"><input id="Nama Perusahaan" class="dottedLines" type="text"></div>
+                    <div class="row"><input id="Alamat Perusahaan" class="dottedLines" type="text"></div>
+                    <div class="row"><input id="Kontak Personal" class="dottedLines" type="text"></div>
+                    <div class="row"><input id="Telpon Personal" class="dottedLines" type="number"></div>
+                    <div class="row"><input id="Email Perusahaan" class="dottedLines" type="text"></div>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="submit" style="height: 30px; width: 120px;">Daftar</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="keterangan">
+                <p>Kontribusi peserta Rp. 2.500.000,- (Dua Juta Lima Ratus Ribu Rupiah) belum termasuk penginapan dan akomodasi</p>
+                <p>Konfirmasi kepesertaan:</p>
+                <ul>
+                    <li>Sebelum 15 Januari 2012 : Rp. 2.500.000,-</li>
+                    <li>Sesudah 15 Januari 2012 : Rp. 2.750.000,-</li>
+                    <li>On site                 : Rp. 3.000.000,-</li>
+                </ul>
+                <p>Pembatalan pendaftaran : </p>
+                <ul>
+                    <li>sebelum H-5 uang dikembalikan 50%</li> 
+                    <li>setelah H-5 uang tidak dapat dikembalikan</li>
+                </ul>
+                    
+                <p>Akomodasi penginapan peserta, harga kamar kelas standar berkisar antara Rp. 250.000,- sampai Rp. 300.000,-</p>
+                <p id="transfer">
+                    Pendaftaran via transfer Bank ke: <br>
+                    Nama Bank&emsp;: Bank BCA KCU Cirebon  <br>
+                    No. Rekening&nbsp;: 1341015478  <br>
+                    Atas Nama&emsp;&nbsp;: Junaedi, S.kepp  
+                </p> 
+                <div class="cp">
+                    <p>
+                        bukti transfer mohon dikirim ke alamat Sekretariat Panitia UPTD Puskesmas Sitopeng <br>
+                        Jl. Sekarsari No. 1 Argasunya Harjamukti Kota Cirebon <br>
+                        atau kirim ke email : entreprenurse41@gmail.com <br>
+                        Konfirmasi setelah transfer ke 0818232869
+                    </p> 
+                </div>  
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

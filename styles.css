@@ -1,0 +1,90 @@
+body {
+    align-items: center;
+    background-color: rgb(106, 176, 206);
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    
+}
+
+.dottedLines {
+    border-bottom: thin black dotted;
+    margin: 5px;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.item {
+    text-align: center;
+    margin-right: 700px;
+}
+.identitas {
+    margin-right: 800px;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.keterangan {
+    margin-left: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* width: 80%; */
+    height: 80%;
+    align-items: center;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+}
+p {
+    text-align: left;
+    font-size: 15px;
+}
+
+#transfer {
+    font-weight: bold;
+}
+.data .col:nth-child(2) .row {
+    width: 700px;
+}
+.row input {
+    width: 650px;
+}
+input {
+    border:  0;
+    line-height: 1.5em;
+}
+.cp {
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.btn {
+    text-align: center;
+    margin-top: 10px;
+}
